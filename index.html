@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo</title>
+    <title>Razonamiento cuantitativo 1</title>
+    <meta name="description" content="Herramienta educativa para clasificar numeros en conjuntos  (naturales , enteros , racionales ) y resolver operaciones aritmeticas  con explicaciones paso a paso">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, quos delectus magni dolores alias, deserunt hic fugiat iure vitae dicta praesentium voluptates numquam obcaecati facilis qui non distinctio! Saepe, harum!</p>
+    <div class ="principal">
+        <nav class="opciones-nav" role="tablist">
+            <button class="tab-btn" data-tab=">
+                <span class="nav-tab-text">Conjunto de Numeros</span>
+            </button>
+            <button class="tab-tbn" role="tab">
+                <span class="nav-tab-text">Operaciones Aritmeticas</span>
+            </button>
+            <button class="tab-btn" role="tab">
+                <span class="nav-tab-text">:D</span>
+            </button>      
+        </nav>
+
+            <section id="panel-clasificar"> class="tab-panel active">
+                <div class="card">
+                    <h2>Clasificar de Conjunto de Numeros</h2>
+                    <p>Ingresa un numero y selecciona un conjunto para clasificar si pertenece a el.</p>
+                </div>
+                <input type="tex" id="Numero-input">
+                <select id="select-conjuntos">
+                    <option value="naturales">Naturales</option>
+                    <option value="enteros">Enteros</option>
+                    <option value="racionales">Racionales</option>
+                </select>
+            </section>
+
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, quos delectus magni dolores alias, deserunt hic fugiat iure vitae dicta praesentium voluptates numquam obcaecati facilis qui non distinctio! Saepe, harum!</p>
+    </div> 
 </body>
 </html>
