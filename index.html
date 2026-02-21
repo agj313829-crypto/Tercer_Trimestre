@@ -11,7 +11,8 @@
     <div class ="principal">
         <nav class="opciones-nav" role="tablist">
             <button class="tab-btn" data-tab=">
-                <span class="nav-tab-text">Conjunto de Numeros</span>
+                <span class="nav-tab-text">
+                    Conjunto de Numeros</span>
             </button>
             <button class="tab-tbn" role="tab">
                 <span class="nav-tab-text">Operaciones Aritmeticas</span>
@@ -21,21 +22,33 @@
             </button>      
         </nav>
 
-            <section id="panel-clasificar"> class="tab-panel active">
-                <div class="card">
-                    <h2>Clasificar de Conjunto de Numeros</h2>
+        <section id="panel-clasificar" class="tab-panel active">
+
+            <div class="card">
+                <div class="card-header">
+                     <h2>Clasificar de Conjunto de Numeros</h2>
                     <p>Ingresa un numero y selecciona un conjunto para clasificar si pertenece a el.</p>
                 </div>
-                <input type="tex" id="Numero-input">
-                <select id="select-conjuntos">
-                    <option value="naturales">Naturales</option>
-                    <option value="enteros">Enteros</option>
-                    <option value="racionales">Racionales</option>
-                </select>
+
+                <div class="card-body">
+                    <div class="card-object">
+                        <label>Inserte el Numero: </label>
+                        <input type="text" id="numero-input" placeholder="Ej: 1, -8, 3/4, 7.6">
+                    </div>
+
+                    <div class="card-object">
+                        <select id="select-conjuntos">
+                            <option value=""> Selecciona un conjunto</option>
+                            <option value="naturales">Naturales(N)</option>
+                            <option value="enteros">Enteros(Z)</option>
+                            <option value="racionales">Racionales(Q)</option>
+                        </select>
+                    </div>
+                    <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>
+                </div>
+            </div>
             </section>
 
-        <h1>Hola mundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, quos delectus magni dolores alias, deserunt hic fugiat iure vitae dicta praesentium voluptates numquam obcaecati facilis qui non distinctio! Saepe, harum!</p>
     </div> 
 </body>
 </html>
